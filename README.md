@@ -34,21 +34,27 @@ Cache the home_sales temporary table to optimize query performance.
 4. Verify Caching
 
 Check if the home_sales temporary table is cached using PySpark.
+
 5. Compare Runtimes with Cached Data
 
 Using the cached data, rerun the query that calculates the average price of a home per "view" rating where the average home price is greater than or equal to $350,000. Determine the runtime and compare it to the uncached runtime.
+
 6. Partition the Data by "date_built"
 
 Partition the home sales data by the date_built field and save it as a formatted Parquet file.
+
 7. Create a Temporary Table for Parquet Data
 
 Create a new temporary table from the partitioned Parquet data.
+
 8. Rerun the Query with Partitioned Data
 
 Rerun the query calculating the average price of a home per "view" rating where the average home price is greater than or equal to $350,000. Determine the runtime and compare it to previous runtimes.
+
 9. Uncache the Temporary Table
 
 Uncache the home_sales temporary table to free up memory.
+
 10. Verify Uncaching
 
 Verify that the home_sales temporary table is uncached using PySpark.
